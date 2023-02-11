@@ -33,7 +33,7 @@ enum TodoListFilter {
 ///
 /// We use [StateProvider] here as there is no fancy logic behind manipulating
 /// the value since it's just enum.
-final todoListFilter = StateProvider((_) => TodoListFilter.all);
+final todoListFilter = StateProvider((_) => TodoListFilter.active);
 
 /// The number of uncompleted todos
 ///
@@ -210,11 +210,11 @@ class Title extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Text(
-      'todos',
+      '_flutCam',
       textAlign: TextAlign.center,
       style: TextStyle(
-        color: Color.fromARGB(38, 47, 47, 247),
-        fontSize: 100,
+        color: Color.fromARGB(36, 42, 31, 142),
+        fontSize: 90,
         fontWeight: FontWeight.w100,
         fontFamily: 'Helvetica Neue',
       ),
